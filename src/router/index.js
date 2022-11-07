@@ -19,6 +19,42 @@ const routes = [
     meta: { layout: "main" },
     component: () => import("../views/AllCategories.vue"),
   },
+  {
+    path: "/history",
+    name: "history",
+    meta: { layout: "main" },
+    component: () => import("../views/LastHistory.vue"),
+  },
+  {
+    path: "/profile",
+    name: "profile",
+    meta: { layout: "main" },
+    component: () => import("../views/BaseProfile.vue"),
+  },
+  {
+    path: "/planning",
+    name: "planning",
+    meta: { layout: "main" },
+    component: () => import("../views/AppPlanning.vue"),
+  },
+  {
+    path: "/detail_record",
+    name: "detail_record",
+    meta: { layout: "main" },
+    component: () => import("../views/AppDetailRecord.vue"),
+  },
+  {
+    path: "/register",
+    name: "register",
+    meta: { layout: "empty" },
+    component: () => import("../views/AppRegister.vue"),
+  },
+  {
+    path: "/record",
+    name: "record",
+    meta: { layout: "main" },
+    component: () => import("../views/AppRecord.vue"),
+  },
 ];
 
 const router = createRouter({
